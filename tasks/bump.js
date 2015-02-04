@@ -27,11 +27,11 @@ module.exports = function(grunt) {
   grunt.registerTask('bump', DESC, function(versionType, incOrCommitOnly) {
     var opts = this.options({
       bumpVersion: true,
-      files: ['package.json', 'bower.json', 'config.xml'],
+      files: ['package.json', 'bower.json', 'app/config.xml'],
       updateConfigs: [], // array of config properties to update (with files)
       commit: true,
       commitMessage: 'Release %VERSION%',
-      commitFiles: ['package.json', 'bower.json', 'config.xml'], // '-a' for all files
+      commitFiles: ['package.json', 'bower.json', 'app/config.xml'], // '-a' for all files
       createTag: true,
       tagName: '%VERSION%',
       tagMessage: 'Version %VERSION%',
